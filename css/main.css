@@ -848,11 +848,11 @@ a {
     gap: 8px;
   }
   .footer-text {
-    font-family: Poppins;
+    font-family: Asap;
     font-size: 18px;
-    font-weight: 500;
-    line-height: 27px;
-    text-align: center;
+    font-weight: 400;
+    line-height: 20.63px;
+    text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
   }
