@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
 }
@@ -10,7 +10,8 @@
 
 html {
   scroll-behavior: smooth;
-  background: #b3dffc;
+  background: #eeb6ff;
+
   color: #000000;
 }
 
@@ -115,8 +116,9 @@ a {
   height: 60px;
   backdrop-filter: blur(33px);
 
-  border-bottom: 4px solid #1c8be7;
-  background: #fff352;
+  box-shadow: 0px 4px 4px 0px #c901d1;
+
+  background: #ffffff;
 }
 .header__background {
   position: absolute;
@@ -128,8 +130,9 @@ a {
   z-index: -1;
   -webkit-transition: left 0.3s ease;
   transition: left 0.3s ease;
-  border-bottom: 4px solid #1c8be7;
-  background: #fff352;
+  box-shadow: 0px 4px 4px 0px #c901d1;
+
+  background: #ffffff;
 }
 .header.is-open .header__background {
   left: 0;
@@ -202,35 +205,30 @@ a {
 
   padding: 50px 60px;
 
-  border-radius: 0px 0px;
+  border-radius: 0px 0px 26px 26px;
 
   background: #fff352;
-  border-bottom: 2px solid #ffffff;
+  background: #da8bff;
 }
 .navigation__list.is-open {
   right: 0;
 }
 .navigation__link {
-  font-family: Poppins;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 30px;
+  font-family: Asap;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20.63px;
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-
+  padding: 6px 8px;
   text-decoration: none;
-  color: #1c8be7;
+  color: #1a0d43;
 }
 .navigation__link:hover,
 .navigation__link:focus {
-  font-family: Poppins;
-  font-size: 20px;
-  font-weight: 900;
-  line-height: 30px;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
+  border: 2px solid #1a0d43;
+  border-radius: 100px;
 }
 .header.is-open {
   background-color: transparent;
@@ -257,20 +255,23 @@ a {
     margin-right: 300px;
   }
   .header {
+    position: fixed;
+    top: 4%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 100%;
-
-    height: 80px;
-    padding: 32px 80px;
+    max-width: 1200px;
+    height: 60px;
+    padding: 10px 100px;
     display: flex;
     align-items: center;
     justify-content: center;
-
+    border-radius: 100px;
     z-index: 1000;
-
-    border-radius: 0px 0px 28px 28px;
   }
 
   .header__background {
+    border-radius: 100px;
   }
 
   .header__icon-button {
@@ -308,15 +309,13 @@ a {
   .navigation__link {
     display: flex;
 
-    font-family: Poppins;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 30px;
+    font-family: Asap;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20.63px;
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
-
-    color: #1c8be7;
   }
 
   .header__icon-home-img {
@@ -329,34 +328,35 @@ a {
 
 .home {
   width: 375px;
-  height: 879px;
+  height: 903px;
 
-  padding: 100px 3px 0;
+  padding: 100px 0px 0;
   margin: auto;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-image: url("/image/home/Home.png");
+  background-image: url("/img/home/Home.png");
 }
 
 .home-title {
   margin: auto;
-  width: 364px;
-  height: 153px;
+  width: 362px;
+  height: 124px;
 }
 .home-text {
-  font-family: Poppins;
-  font-size: 22px;
-  font-weight: 900;
-  line-height: 32px;
+  font-family: Asap;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
   text-align: center;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  color: #008bff;
-  text-shadow: 0px 2px 0px #0b1143;
+
+  color: #ffffff;
+  -webkit-text-stroke: 1px #88c6e7;
   text-transform: uppercase;
 
-  padding: 0;
+  padding: 26px 0 0;
 }
 .home__google-button_link {
   display: flex;
@@ -367,34 +367,34 @@ a {
 @media screen and (min-width: 1200px) {
   .home {
     width: 1440px;
-    height: 800px;
+    height: 760px;
 
-    padding: 213px 0 0 55px;
+    padding: 160px 0 0 71px;
     display: flex;
     flex-direction: column;
     align-items: start;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-image: url("/image/home/Home\ \(1\).png");
+    background-image: url("/img/home/Home\ \(1\).png");
   }
 
   .home-title {
-    width: 599px;
-    height: 253px;
-    margin: 0 48px;
+    width: 705px;
+    height: 242px;
+    gap: 0px;
+    opacity: 0px;
   }
   .home-text {
-    padding: 0 48px;
-    width: 696px;
-
-    font-family: Poppins;
-    font-size: 32px;
-    font-weight: 900;
-    line-height: 50px;
+    width: 705px;
+    font-family: Asap;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 46px;
     text-align: center;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
+    padding-top: 16px;
   }
   .home__google-button_link {
     display: flex;
@@ -406,7 +406,7 @@ a {
   padding: 32px 20px 0;
   margin: auto;
   width: 375px;
-  height: 780px;
+  height: 786px;
 
   display: flex;
   flex-direction: column;
@@ -414,43 +414,48 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-image: url("/image/about/About\ us.png");
+  background-image: url("/img/about/About\ the\ Game.png");
+}
+.about-img-container {
+  overflow: hidden;
+  position: relative;
+  width: 335px;
+  height: 380px;
+  border: 6px solid #ffffff;
+  border-radius: 32px;
+  margin: 40px 0 22px;
+}
+.about-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .about-title {
-  font-family: Poppins;
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 60px;
-  letter-spacing: 0.03em;
+  font-family: Asap;
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 30px;
   text-align: center;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
 }
 
 .about-text {
-  margin-top: 39px;
-  width: 335px;
-  height: 418px;
-  padding: 27px;
-  background: #ffffff80;
-  border: 2px solid #ffffff;
-  border-radius: 26px;
-  backdrop-filter: blur(16px);
-
-  font-family: Poppins;
+  font-family: Asap;
   font-size: 18px;
   font-weight: 400;
-  line-height: 28px;
+  line-height: 26px;
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
 }
 .about-text-bold {
-  font-family: Poppins;
+  font-family: Asap;
   font-size: 18px;
   font-weight: 700;
-  line-height: 28px;
+  line-height: 26px;
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
@@ -458,7 +463,7 @@ a {
 
 @media screen and (min-width: 1200px) {
   .about {
-    padding: 32px 100px 0;
+    padding: 40px 41px 0 52px;
     margin: auto;
     width: 1440px;
     height: 600px;
@@ -468,167 +473,172 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-image: url("/image/about/About\ us\ \(1\).png");
+    background-image: url("/img/about/About\ the\ Game\ \(1\).png");
+  }
+  .about-container {
+    width: 1346px;
+    display: flex;
+    gap: 22px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+  }
+
+  .about-img-container {
+    overflow: hidden;
+    position: relative;
+    width: 746px;
+    height: 420px;
+    margin: 0;
+  }
+  .about-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
   }
 
   .about-text {
-    margin-top: 40px;
-    width: 1241px;
-    height: 200px;
-    padding: 58px 33px 58px 33px;
-    border-radius: 26px;
-
-    font-family: Poppins;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 28px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-  }
-  .about-text-bold {
-    font-family: Poppins;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 28px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
+    width: 677px;
   }
 }
 .advantages {
   width: 375px;
-  height: 1130px;
-
+  height: 824px;
   margin: auto;
-  padding: 32px 0px 0px;
+  padding: 40px 20px 0px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-image: url("/image/advantages/Benefits.png");
+  background-image: url("/img/advantages/Feature\ keys.png");
 }
-.advantages-text {
-  font-family: Poppins;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 27px;
-  text-align: center;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-  color: #ffffff;
-}
+
 .advantages-list {
-  padding: 40px 53px;
+  padding: 40px 0;
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: 22px;
 }
 .advantages-item {
-  width: 269px;
-  height: 224.2px;
-  padding: 24px 16px 24px 16px;
-  border-radius: 26px;
-  background: #ffffffe5;
-  border: 1px solid #fdfdfd;
+  width: 335px;
+  height: 94px;
+  gap: 14px;
+  display: flex;
+  align-items: center;
 }
-.advantages-item-img {
-  margin: auto;
-}
+
 .advantages-item-text {
-  font-family: Poppins;
-  font-size: 18px;
+  font-family: Asap;
+  font-size: 16px;
   font-weight: 400;
-  line-height: 27px;
-  text-align: center;
+  line-height: 24px;
+  text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  padding: 13px 0 8px;
-  color: #0e025b;
 }
 .advantages-text-bold {
-  font-family: Poppins;
-  font-size: 20px;
+  font-family: Asap;
+  font-size: 18px;
   font-weight: 700;
-  line-height: 30px;
-  text-align: center;
+  line-height: 46px;
+  text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  color: #0e025b;
+  text-transform: uppercase;
 }
 @media screen and (min-width: 1200px) {
   .advantages {
     width: 1440px;
-    height: 400px;
+    height: 600px;
+
     margin: auto;
-    padding: 48px 153px 0px;
+    padding: 40px 139px 0px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-image: url("/image/advantages/Benefits\ \(1\).png");
+    background-image: url("/img/advantages/Feature\ keys\ \(1\).png");
   }
-  .advantages-text {
-    font-family: Poppins;
-    font-size: 22px;
-    font-weight: 700;
-    line-height: 33px;
-    text-align: center;
+
+  .advantages-list {
+    padding: 77px 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 1161px;
+    gap: 32px;
+    height: 500px;
+  }
+  .advantages-item {
+    width: 580px;
+    height: 94px;
+    gap: 14px;
+    display: flex;
+    align-items: center;
+  }
+
+  .advantages-item-text {
+    font-family: Asap;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 46px;
+    text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
   }
-  .advantages-list {
-    padding: 50px 0px;
-    display: flex;
-    flex-direction: row;
-    gap: 18px;
+  .advantages-text-bold {
+    font-family: Asap;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 46px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    text-transform: uppercase;
   }
 }
 
 .gallery {
   width: 375px;
-  height: 620px;
+  height: 600px;
 
   margin: auto;
-  padding: 32px 0px 0px;
+  padding: 40px 20px 0px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-image: url("/image/gallery/Gallery.png");
+  background-image: url("/img/gallery/Gallery.png");
 }
 .gallery-title {
-  font-family: Poppins;
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 30px;
-  letter-spacing: 0.03em;
-  text-align: center;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
   color: #ffffff;
 }
 .gallery-list {
-  width: 375px;
+  width: 335px;
   margin: auto;
+  padding: 40px 0;
 }
 
 .gallery-item {
   overflow: hidden;
   position: relative;
-  width: 362px;
-  height: 476px;
-  border-radius: 18px;
-  margin: 0 1px;
+  width: 335px;
+  height: 340px;
+  border-radius: 26px;
+  background: #ffffff;
+  border: 4px solid #ffffff;
+  margin: 0 10px;
 }
 .gallery-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center;
+  object-position: left;
 }
 .gallery-button-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
+  gap: 16px;
 }
 
 .gallery-button {
@@ -637,8 +647,8 @@ a {
   padding: 0;
   -webkit-transition: scale 0.3s ease;
   transition: scale 0.3s ease;
-  width: 50.67px;
-  height: 55px;
+  width: 58.95px;
+  height: 55.69px;
 }
 
 .gallery-button:hover {
@@ -650,26 +660,49 @@ a {
 }
 
 .gallery-button-icon {
-  width: 50.67px;
-  height: 55px;
+  width: 58.95px;
+  height: 55.69px;
 }
 @media screen and (min-width: 1200px) {
   .gallery {
     width: 1440px;
     height: 600px;
-
-    background-image: url("/image/gallery/Gallery\ \(1\).png");
+    padding: 40px 0 0;
+    background-image: url("/img/gallery/Gallery\ \(1\).png");
   }
 
   .gallery-list {
     width: 1440px;
     margin: auto;
+    padding: 29px 0 48px;
+  }
+  .gallery-item {
+    overflow: hidden;
+    position: relative;
+    width: 603px;
+    height: 340px;
+    border-radius: 26px;
+    background: #ffffff;
+    border: none;
+    margin: 0 10px;
+  }
+  .gallery-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left;
   }
 }
 .play {
   width: 375px;
+  height: 353px;
+
   margin: auto;
-  padding: 32px 20px;
+  padding: 40px 20px 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  background-image: url("/img/play/Reviews.png");
 }
 
 .play-list {
@@ -679,74 +712,76 @@ a {
 }
 .play-item {
   width: 335px;
-  height: 140px;
-  padding: 16px;
+  height: 119px;
+  padding: 16px 36px;
   border-radius: 26px;
   margin: 0 10px;
-  background: #fdfdfd;
+  background: #ffffff;
+  border: 1px solid #0c252e;
 }
 
 .play-text-bold {
-  font-family: Poppins;
+  font-family: Asap;
   font-size: 20px;
   font-weight: 700;
-  line-height: 30px;
-  letter-spacing: 0.03em;
-  text-align: left;
+  line-height: 22.92px;
+  text-align: center;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
 }
 .play-text {
-  font-family: Poppins;
+  font-family: Asap;
   font-size: 16px;
   font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  text-align: left;
+  line-height: 18.34px;
+  text-align: center;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  padding-top: 16px;
+
+  padding-top: 10px;
 }
 
 @media screen and (min-width: 1200px) {
   .play {
     width: 1440px;
+    height: 400px;
 
     margin: auto;
-    padding: 32px 0px 70px;
+    padding: 40px 0px 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-image: url("/img/play/Reviews\ \(1\).png");
   }
 
   .play-list {
-    padding-top: 48px;
+    padding-top: 46px;
     margin: auto;
-    padding-bottom: 22px;
+    padding-bottom: 48px;
   }
   .play-item {
-    width: 655px;
-    height: 148px;
-    padding: 32px 36px;
-    border-radius: 26px;
-    margin: 0 11px;
+    width: 520px;
+    height: 107px;
+
+    margin: 0 18px;
     background: #fdfdfd;
   }
 
   .play-text-bold {
-    font-family: Poppins;
+    font-family: Asap;
     font-size: 20px;
     font-weight: 700;
-    line-height: 30px;
-    letter-spacing: 0.03em;
-    text-align: left;
+    line-height: 22.92px;
+    text-align: center;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
   }
   .play-text {
-    font-family: Poppins;
-    font-size: 18px;
+    font-family: Asap;
+    font-size: 16px;
     font-weight: 400;
-    line-height: 27px;
-    letter-spacing: 0.03em;
-    text-align: left;
+    line-height: 18.34px;
+    text-align: center;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
 
@@ -755,15 +790,15 @@ a {
 }
 
 .footer {
-  background: #fff352;
+  background: #cb6aff;
 
-  padding: 19px;
+  padding: 23px 11px;
   margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 12px;
+  gap: 22px;
 }
 
 .footer-wrapper {
@@ -775,69 +810,61 @@ a {
   gap: 4px;
 }
 .footer-text {
-  font-family: Poppins;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 24px;
+  font-family: Asap;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20.63px;
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
+
   text-transform: uppercase;
   text-decoration: none;
-  color: #000000;
+  color: #ffffff;
 }
 
 .footer-copyright {
-  font-family: Poppins;
+  font-family: Asap;
   font-size: 10px;
   font-weight: 400;
-  line-height: 15px;
+  line-height: 11.46px;
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
+  color: #ffffff;
 }
-.footer-img {
-  display: none;
-}
+
 @media screen and (min-width: 1200px) {
   .footer {
-    padding: 0px 50px 0 228px;
+    padding: 40px 38px;
     display: flex;
     flex-direction: row;
     align-items: end;
+    justify-content: end;
     width: 1440px;
-    gap: 86px;
+    gap: 189px;
   }
   .footer-wrapper {
-    gap: 4px;
-    padding: 27px 0;
-    padding-left: 84px;
+    gap: 8px;
   }
   .footer-text {
     font-family: Poppins;
     font-size: 18px;
     font-weight: 500;
     line-height: 27px;
-    text-align: left;
+    text-align: center;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
   }
 
   .footer-copyright {
-    font-family: Poppins;
+    font-family: Asap;
     font-size: 10px;
     font-weight: 400;
-    line-height: 15px;
+    line-height: 11.46px;
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
-
-    padding: 27px 0;
-  }
-  .footer-img {
-    display: flex;
-
-    margin-top: -45px;
   }
 }
 
@@ -845,10 +872,11 @@ a {
   flex-direction: column;
   align-items: start;
   padding: 114px 20px 51px;
+  background-color: #fffefb;
 }
 
 .policy-terms-title {
-  font-family: Poppins;
+  font-family: Asap;
   font-size: 20px;
   font-weight: 700;
   line-height: 26px;
@@ -858,7 +886,7 @@ a {
 }
 
 .policy-terms-text {
-  font-family: Poppins;
+  font-family: Asap;
   font-size: 20px;
   font-weight: 700;
   line-height: 26px;
@@ -869,7 +897,7 @@ a {
   padding-top: 20px;
 }
 .policy-terms-texts {
-  font-family: Poppins;
+  font-family: Asap;
   font-size: 18px;
   font-weight: 400;
   line-height: 26px;
@@ -880,7 +908,7 @@ a {
   padding-top: 8px;
 }
 .policy-terms-text-one {
-  font-family: Poppins;
+  font-family: Asap;
   font-size: 18px;
   font-weight: 400;
   line-height: 26px;
@@ -895,7 +923,7 @@ a {
   list-style-type: disc;
 
   padding: 20px 0 20px 25px;
-  font-family: Poppins;
+  font-family: Asap;
   font-size: 18px;
   font-weight: 400;
   line-height: 26px;
@@ -912,7 +940,7 @@ a {
 
   padding-left: 25px;
 
-  font-family: Poppins;
+  font-family: Asap;
   font-size: 18px;
   font-weight: 400;
   line-height: 26px;
@@ -924,7 +952,7 @@ a {
   color: inherit;
   text-decoration: none;
 
-  font-family: Poppins;
+  font-family: Asap;
   font-size: 18px;
   font-weight: 400;
   line-height: 26px;
@@ -937,7 +965,7 @@ a {
 .email-link-color {
   color: #000000;
 
-  font-family: Poppins;
+  font-family: Asap;
   font-size: 18px;
   font-weight: 400;
   line-height: 26px;
